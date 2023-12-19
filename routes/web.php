@@ -16,3 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Định tuyến cơ bản
+// domain.com/post 
+
+Route::get('/post', function () {
+    return "Đây là trang bài viết";
+});
+
+//Đường dẫn dành riêng cho Admin
+Route::get('/admin/product', function () {
+    return "Trang quản lý sản phẩm";
+});
+
+//Đường dẫn dành riêng cho Admin thêm sản phẩm
+Route::get('/admin/product/add', function () {
+    return "Trang thêm mới sản phẩm";
+});
